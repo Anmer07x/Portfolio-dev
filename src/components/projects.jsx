@@ -25,12 +25,11 @@ const proyectos = [
       "Aplicación web desarrollada con React.js que permite explorar Pokémon. Utiliza la PokéAPI para obtener datos en tiempo real.",
     imagen: proyecto1Img,
     codigo: "https://github.com/Anmer07x/Pokedex-React.git",
-    demo: "https://pokedex-anmer.netlify.app/",
     tecnologias: "React, Tailwind, API",
     tipo: "desarrollo",
   },
   {
-    titulo: "Dashboard Interactivo",
+    titulo: "Dashboard Interactivo ",
     descripcion:
       "Dashboard que permite filtrar clientes según su estado. Desarrollado con Tailwind CSS.",
     imagen: proyecto2Img,
@@ -41,11 +40,10 @@ const proyectos = [
   },
 
   {
-    titulo: "Indetech Website",
+    titulo: "Indetech Website (Proyecto privado)",
     descripcion:
       "Página web oficial de Indetech, una empresa enfocada en el desarrollo de soluciones tecnológicas, innovación y automatización de procesos.",
     imagen: proyecto3Img,
-    demo: "https://indetechweb.netlify.app/",
     tecnologias: "React, Tailwind, Node.js, Express",
     tipo: "desarrollo",
   },
@@ -54,17 +52,15 @@ const proyectos = [
     descripcion:
       "Plataforma web con quizzes diarios de HTML, CSS, Figma y UX/UI. Aprende, practica y seguí tu progreso con una barra visual.",
     imagen: proyecto4Img,
-    demo: "https://demo2.com",
     codigo: "https://github.com/Anmer07x/Daily-bite",
     tecnologias: "JavaScript, CSS, HTML",
     tipo: "desarrollo",
   },
   {
-    titulo: "Sistema de cubicaje",
+    titulo: "Sistema de cubicaje (Proyecto privado)",
     descripcion:
       "Aplicación web para calcular y gestionar cubicajes de carga, desarrollada con PHP y CodeIgniter 4. Ideal para optimizar espacio y logística.",
     imagen: proyecto5Img,
-    codigo: "https://github.com/anmer/proyecto2",
     tecnologias: "PHP, CodeIgniter, MySQL",
     tipo: "desarrollo",
   },
@@ -133,7 +129,7 @@ const proyectos = [
     descripcion:
       "Sitio web de presentación para la Institución Educativa San José de Timbiquí, diseñado para mostrar su misión, visión y servicios educativos.",
     imagen: proyecto10Img,
-    demo: "https://potencia-afro.netlify.app/",
+    demo: "https://iesanjosedetimbiqui.edu.co",
     tecnologias:
       "WordPress, Elementor,  SEO,  Theme Astra, WPForms",
     tipo: "WordPress",
