@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Chart } from 'react-chartjs-2';
+import { Radar } from 'react-chartjs-2'; // ✅ Import correcto
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -25,7 +25,7 @@ const Habilidades = () => {
 
   const categories = {
     frontend: ['React', 'JavaScript', 'TypeScript', 'Tailwind', 'HTML5', 'CSS3'],
-    backend: ['Node.js', 'Express', 'PHP', 'MySQL', 'APIs','MongoDB' ],
+    backend: ['Node.js', 'Express', 'PHP', 'MySQL', 'APIs', 'MongoDB'],
     diseño: ['Figma', 'UX/UI', 'Prototipado', 'Adobe XD']
   };
 
@@ -73,7 +73,7 @@ const Habilidades = () => {
 
   const chartOptions = {
     responsive: true,
-    maintainAspectRatio: false, // Permite que el gráfico se ajuste al contenedor
+    maintainAspectRatio: false,
     scales: {
       r: {
         angleLines: {
@@ -85,7 +85,7 @@ const Habilidades = () => {
         ticks: {
           stepSize: 20,
           backdropColor: 'transparent',
-          display: false // Ocultamos los números para un diseño más limpio
+          display: false
         },
         pointLabels: {
           font: {
@@ -118,7 +118,7 @@ const Habilidades = () => {
   };
 
   return (
-    <section id="habilidades" className="py-20 ">
+    <section id="habilidades" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -149,18 +149,20 @@ const Habilidades = () => {
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
-                {category === 'frontend' ? 'Frontend' : 
-                 category === 'backend' ? 'Backend' : 'Diseño'}
+                {category === 'frontend'
+                  ? 'Frontend'
+                  : category === 'backend'
+                  ? 'Backend'
+                  : 'Diseño'}
               </motion.button>
             ))}
           </div>
         </div>
 
-        {/* Contenedor del gráfico con tamaño fijo y centrado */}
+        {/* Contenedor del gráfico */}
         <div className="flex justify-center mb-12">
           <div className="w-full max-w-2xl h-96 bg-white rounded-2xl p-6 shadow-xl border border-gray-200">
-            <Chart 
-              type="radar" 
+            <Radar 
               data={getChartData()} 
               options={chartOptions} 
             />
@@ -191,7 +193,7 @@ const Habilidades = () => {
                   whileInView={{ width: `${skillLevels[skill]}%` }}
                   transition={{ duration: 1, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className={`h-2.5 rounded-full bg-gradient-to-r from-blue-500 to-indigo-700`}
+                  className="h-2.5 rounded-full bg-gradient-to-r from-blue-500 to-indigo-700"
                 />
               </div>
               
