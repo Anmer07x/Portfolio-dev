@@ -1,5 +1,4 @@
-# 🚀 Portafolio Personal - React + Tailwind
-
+# 🚀 Portafolio Personal 
 Este es mi **portafolio personal** desarrollado con **React** y **Tailwind CSS**, creado para mostrar mis proyectos, habilidades y un poco sobre mí.  
 Mi objetivo con este portafolio es **destacar mi experiencia en desarrollo frontend y backend** mediante proyectos prácticos y un diseño moderno.
 
